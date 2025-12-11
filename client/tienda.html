@@ -8,47 +8,154 @@
 
 <body>
 
-    <!-- BARRA SUPERIOR -->
-   <header class="top-bar">
+
+
+
+    <header class="top-bar">
         <div class="container top-bar-inner">
             <div class="logo">
-                <img src="" alt="">
+                <img src alt>
 
-                <a href="../index.html" class="logo-text">GAMESTORE</a>
+                <a href="../client/tienda.html" class="logo-text"><img class="btn-burger"
+                        src="../assets/images/logo-removebg-preview.png" width="100px" alt></a>
 
                 <nav class="main-nav">
-                    <a href="tienda.html">Tienda</a>
-                    <a href="carrito.html">Carrito</a>
+                    <a href="./tienda.html">Tienda</a>
+                    <a href="./carrito.html">Carrito</a>
                     <a href="../support.html">Soporte</a>
                 </nav>
             </div>
 
-            <div class="top-right">
-                <a href="../auth/login.html">Iniciar sesión</a>
-                <a href="../auth/registro.html" class="btn-register">registrarse</a>
+            <div class="burger">
+
+                <div class="contenedor">
+                    <div class="top-right">
+                        <h1 id="title" class="header-title">BIENVENIDO</h1>
+                        <a class="logoutBtn" id="logoutBtn">Cerrar
+                            sesión</a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
 
 
-    <!-- BARRA SECUNDARIA -->
+
     <div class="sub-bar">
         <div class="container">
             <nav class="sub-nav">
                 <a href="#explorar">Explorar</a>
                 <a href="#recomendados">Recomendaciones</a>
-                <a href="#categorias">Categorías</a>
+                <div><a href="#categorias">Categorías</a>
+                    <div class="categorias">
+                        <a href="#C-accion"></a>
+                    </div>
+                </div>
+
 
             </nav>
         </div>
     </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
+
     <main>
+
+        <div class="container2" id="game-list1">
+
+
+
+
+
+            <section class="main-banner">
+
+                <img src="https://static.toiimg.com/thumb/msid-122865428,width-1280,height-720,resizemode-4/122865428.jpg"
+                    class="banner-img">
+
+                <div class="banner-info">
+                    <h2>BATTLEFIELD 6</h2>
+                    <h1>FREE TRIAL</h1>
+
+                    <p class="desc">
+                        Juega gratis 4 modos y 3 mapas. Descárgalo, forma equipo
+                        y vive tu
+                        momento de "solo en Battlefield". Hasta el 2 de
+                        diciembre.
+                    </p>
+
+                    <div class="buttons">
+                        <a class="play-btn" id="juega">Juega ya</a>
+                        <a class="wishlist-btn">+ Añadir a carrito</a>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <aside class="sidebar">
+
+                <a href="#fortnite">
+                    <div class="item">
+                        <img
+                            src="https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/output=format:webp/cmi7o5x1h0ey30doiljs26qf6">
+                        <span>Fortnite</span>
+                    </div>
+                </a>
+
+                <a href="#battlefield">
+                    <div class="item">
+                        <img
+                            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1764108244">
+                        <span>Battlefield 6</span>
+                    </div>
+                </a>
+
+                <a href="#racing">
+                    <div class="item">
+                        <img
+                            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/299970/9f70176ac521d6a7472882a4bcf67fa9251c3e63/header.jpg?t=1764075656">
+                        <span>Project Motor Racing</span>
+                    </div>
+                </a>
+
+                <a href="#arca">
+                    <div class="item">
+                        <img
+                            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/04baafaf64a5aa5f46ecda5d71889a4848dc0628/header.jpg?t=1764583047">
+                        <span>ARC Raiders</span>
+                    </div>
+                </a>
+
+                <a href="#infinity">
+                    <div class="item">
+                        <img
+                            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164330/9cb2777abbf0a835ea0834b1f1c2d3100adea1f5/header.jpg?t=1764316773">
+                        <span>Infinity Nikki</span>
+                    </div>
+                </a>
+
+                <a href="#apexlegends">
+                    <div class="item">
+                        <img
+                            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/6ae90b012e725a93622c3694d9d866b886cfd0f8/header.jpg?t=1762457261">
+                        <span>Apex Legends™</span>
+                    </div>
+                </a>
+
+                <a href="#forzahorizon">
+                    <div class="item">
+                        <img
+                            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1746471508">
+                        <span>Forza Horizon 5</span>
+                    </div>
+                </a>
+
+            </aside>
+        </div>
         <div class="container content">
             <section class="left-column">
                 <h2 class="section-title" id="recomendados">RECOMENDADOS PARA TI</h2>
-                <div class="game-list">
+                <div class="lista-1" id="lista-1">
                     <article class="game-item">
                         <div>
                             <img class="game-thumb"
@@ -61,6 +168,7 @@
                                 <div class="game-desc">Acción, cooperativo, vista superior</div>
                             </div>
                             <div class="game-price">COL$ 26.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
                         </div>
                     </article>
 
@@ -68,7 +176,7 @@
                         <div>
                             <img class="game-thumb"
                                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861"
-                                alt="">
+                                alt="Counter strike" height="70px">
                         </div>
 
                         <div class="game-info">
@@ -77,19 +185,21 @@
                                 <div class="game-desc">RPG,disparos, multijugador</div>
                             </div>
                             <div class="game-price">COL$ 26.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar</a>
                         </div>
                     </article>
 
                     <article class="game-item">
                         <div><img class="game-thumb"
                                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/6ae90b012e725a93622c3694d9d866b886cfd0f8/header.jpg?t=1762457261"
-                                alt=""></div>
+                                alt="Apex legends" height="70px"></div>
                         <div class="game-info">
                             <div>
-                                <div class="game-title">Apex Legends™</div>
+                                <div id="apexlegends" class="game-title">Apex Legends™</div>
                                 <div class="game-desc">Acción, Aventura, Free to Play</div>
                             </div>
                             <div class="game-price">COL$ 200.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar</a>
                         </div>
                     </article>
                 </div>
@@ -97,36 +207,156 @@
         </div>
         <br><br>
 
-        <!-- Explorar -->
-        <div class="container content">
+
+        <div class="container content" class="product-container">
             <section class="left-column">
                 <h2 class="section-title" id="explorar">EXPLORAR</h2>
-                <div class="game-list   ">
+
+                <div class="game-list" id="lista-2">
+
                     <article class="game-item">
                         <div>
                             <img class="game-thumb"
-                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/header.jpg?t=1755109910"
-                                alt="DOOM Eternal" width="140px" height="70px">
+                                src="https://cms-assets.unrealengine.com/cm6l5gfpm05kr07my04cqgy2x/output=format:webp/cmi7o5x1h0ey30doiljs26qf6"
+                                alt="Fortnite" width="140" height="70">
                         </div>
                         <div class="game-info">
                             <div>
-                                <div class="game-title">DOOM Eternal</div>
+                                <div class="game-title" id="fortnite">Fortnite</div>
+                                <div class="game-desc">Battle Royale, shooter, multijugador</div>
+                            </div>
+                            <div class="game-price">GRATIS</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar</a>
+                        </div>
+                    </article>
+
+                    <article class="game-item">
+                        <div>
+                            <img class="game-thumb"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1764108244"
+                                alt="Battlefield 6" width="140" height="70">
+                        </div>
+                        <div class="game-info">
+                            <div>
+                                <div id="battlefield" class="game-title">Battlefield 6</div>
                                 <div class="game-desc">Acción, disparos, campaña intensa</div>
                             </div>
                             <div class="game-price">COL$ 26.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar</a>
+                        </div>
+                    </article>
+
+                    <article class="game-item">
+                        <div>
+                            <img class="game-thumb"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/299970/9f70176ac521d6a7472882a4bcf67fa9251c3e63/header.jpg?t=1764075656"
+                                alt="Project Motor Racing" width="140" height="70">
+                        </div>
+                        <div class="game-info">
+                            <div>
+                                <div id="racing" class="game-title">Project Motor Racing</div>
+                                <div class="game-desc">Carreras, simulación</div>
+                            </div>
+                            <div class="game-price">COL$ 80.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar</a>
+                        </div>
+                    </article>
+
+                    <article class="game-item">
+                        <div>
+                            <img class="game-thumb"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/04baafaf64a5aa5f46ecda5d71889a4848dc0628/header.jpg?t=1764583047"
+                                alt="ARC Raiders" width="140" height="70">
+                        </div>
+                        <div class="game-info">
+                            <div>
+                                <div id="arca" class="game-title">ARC Raiders</div>
+                                <div class="game-desc">Cooperativo, acción, sci-fi</div>
+                            </div>
+                            <div class="game-price">GRATIS</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar</a>
+                        </div>
+                    </article>
+
+                    <article class="game-item">
+                        <div>
+                            <img class="game-thumb"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164330/9cb2777abbf0a835ea0834b1f1c2d3100adea1f5/header.jpg?t=1764316773"
+                                alt="Infinity Nikki" width="140" height="70">
+                        </div>
+                        <div class="game-info">
+                            <div>
+                                <div id="infinity" class="game-title">Infinity Nikki</div>
+                                <div class="game-desc">Aventura, mundo abierto</div>
+                            </div>
+                            <div class="game-price">COL$ 120.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+                        </div>
+                    </article>
+
+                    <article class="game-item">
+                        <div>
+                            <img class="game-thumb"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/6ae90b012e725a93622c3694d9d866b886cfd0f8/header.jpg?t=1762457261"
+                                alt="Apex Legends" width="140" height="70">
+                        </div>
+                        <div class="game-info">
+                            <div>
+                                <div class="game-title">Apex Legends™</div>
+                                <div class="game-desc">Acción, Battle Royale, free to play</div>
+                            </div>
+                            <div class="game-price">COL$ 200.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar</a>
+                        </div>
+                    </article>
+
+                    <article class="game-item">
+                        <div>
+                            <img class="game-thumb"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1746471508"
+                                alt="Forza Horizon 5" width="140" height="70">
+                        </div>
+                        <div class="game-info">
+                            <div>
+                                <div id="forzahorizon" class="game-title">Forza Horizon 5</div>
+                                <div class="game-desc">Carreras, mundo abierto</div>
+                            </div>
+                            <div class="game-price">COL$ 150.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar</a>
                         </div>
                     </article>
 
                 </div>
-
             </section>
-
         </div>
 
-        <div class="container content">
+        <br><br>
+
+        <div class="container content " id="game-list1">
             <section class="left-column">
                 <h2 class="section-title" id="categorias">CATEGORÍAS</h2>
-                <div class="game-list   ">
+                <br>
+                <h3 class="section-title">Accion y cooperativo</h3>
+                <div class="">
+                    <article class="game-item">
+                        <div>
+                            <img class="game-thumb"
+                                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1764108244"
+                                alt="BATTLEFIELD 6" width="140px" height="70px">
+                        </div>
+                        <div class="game-info">
+                            <div>
+                                <div id="battlefield" class="game-title">BATTLEFIELD 6</div>
+                                <div class="game-desc">Acción, disparos, campaña intensa</div>
+                            </div>
+                            <div class="game-price">COL$ 26.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="game-list2">
                     <article class="game-item">
                         <div>
                             <img class="game-thumb"
@@ -139,10 +369,13 @@
                                 <div class="game-desc">Acción, disparos, campaña intensa</div>
                             </div>
                             <div class="game-price">COL$ 26.000,00</div>
+                            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar</a>
                         </div>
                     </article>
 
                 </div>
+
+
 
             </section>
 
@@ -156,7 +389,7 @@
         <div class="contact-footer-container">
             <div>
                 <h3>Enlaces útiles</h3>
-                <a href="../index.html">Inicio</a><br>
+
                 <a href="tienda.html">Tienda</a><br>
                 <a href="../support.html">Soporte</a><br>
             </div>
@@ -173,6 +406,8 @@
             </div>
         </div>
     </footer>
+    <script src="../assets/js/tienda.js"></script>
+    
 
 </body>
 

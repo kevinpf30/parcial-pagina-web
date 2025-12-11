@@ -1,53 +1,80 @@
-<!-- Crud de carrito -->
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi carrito</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+
 <body>
-    <!-- BARRA SUPERIOR -->
+   
     <header class="top-bar">
         <div class="container top-bar-inner">
             <div class="logo">
-                <img src="" alt="">
+                <img src alt>
 
-                <a href="../index.html" class="logo-text">GAMESTORE</a>
+                <a href="./tienda.html" class="logo-text"><img class="btn-burger"
+                        src="../assets/images/logo-removebg-preview.png" width="100px" alt></a>
 
                 <nav class="main-nav">
-                    <a href="tienda.html">Tienda</a>
-                    <a href="carrito.html">Carrito</a>
+                    <a href="./tienda.html">Tienda</a>
+                    <a href="./carrito.html">Carrito</a>
                     <a href="../support.html">Soporte</a>
                 </nav>
             </div>
 
-            <div class="top-right">
-                <a href="../auth/login.html">Iniciar sesión</a>
-                <a href="../auth/registro.html" class="btn-register">registrarse</a>
+            <div class="burger">
+
+                <div class="contenedor">
+                    <div class="top-right">
+                        <h1 id="title" class="header-title">BIENVENIDO</h1>
+                        <button class="logoutBtn" id="logoutBtn">Cerrar
+                            sesión</button>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
-<div class="carrito-empty-page">
 
-    <!-- ICONO IGUAL A LA IMAGEN -->
-    <div class="carrito-empty-icon">
-        <img src="../assets/images/shopping-cart-cancel-button_icon-icons.com_56130.ico" alt="Carrito vacío" width="150px">
+    <main>
+        <div class="carrito-container">
+            <ul>
+                <h2 class="title-carro"><img src="/assets/images/carrito.svg" alt="" width="30%"></h2>
+                <br><br>
+                <li class="submenu">
+                
+                    <div id="carrito">
+
+                        <table class="tabla" id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody id="carrito-body">
+                            
+                            </tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar todo el carrito</a>
+                    
+                     </div>
+                
+                 </li>
+            
+        </ul>
     </div>
 
-    <h1 class="carrito-empty-title">Tu carrito está vacío</h1>
-
-    <button class="carrito-empty-btn">
-        Comprar juegos
-    </button>
-</div>
-
-<footer class="contact-footer">
+    <footer class="contact-footer">
         <div class="contact-footer-container">
             <div>
                 <h3>Enlaces útiles</h3>
-                <a href="../index.html">Inicio</a><br>
+
                 <a href="tienda.html">Tienda</a><br>
                 <a href="../support.html">Soporte</a><br>
             </div>
@@ -64,5 +91,8 @@
             </div>
         </div>
     </footer>
+    <script src="../assets/js/carrito.js"></script>
+     
 </body>
+
 </html>
